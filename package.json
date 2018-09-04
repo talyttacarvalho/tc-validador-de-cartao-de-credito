@@ -1,0 +1,27 @@
+{
+  "name": "tc-validador-de-cartao-de-credito",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talyttacarvalho/validador-de-cartao-de-credito.git"
+  },
+  "keywords": [
+    "validador"
+  ],
+  "author": "Talytta Carvalho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/talyttacarvalho/validador-de-cartao-de-credito/issues"
+  },
+  "homepage": "https://github.com/talyttacarvalho/validador-de-cartao-de-credito#readme",
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "mocha": "^5.2.0"
+  }
+}
