@@ -27,7 +27,7 @@ validator.cardValidator(36490102462661);
 * proceda a instação utilizando
 
 ```
-  > $npm install tc-validador-de-cartao-de-credito
+$npm install tc-validador-de-cartao-de-credito
 ```
 
 ## Roadmap oficial do projeto
