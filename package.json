@@ -22,6 +22,7 @@
   "homepage": "https://github.com/talyttacarvalho/validador-de-cartao-de-credito#readme",
   "devDependencies": {
     "eslint": "^5.5.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
   }
 }

@@ -11,11 +11,11 @@ function cardValidator(numCard) {
 
 function isValid(numCard) {
   if (!numCard) {
-    throw new Error ("Número do cartão não inserido.");
+    throw new Error("Número do cartão não inserido.");
   }
   for (num of numCard) {
     if (num.charCodeAt() < 48 || num.charCodeAt() > 57) {
-      throw new Error ("Cartão com dígitos inválidos (letras).");
+      throw new Error("Cartão com dígitos inválidos (letras).");
     }
   }
   return true;
@@ -52,7 +52,6 @@ function applyAlgorithm(numCard) {
   } else {
     return false;
   }
-
 }
 
 module.exports = cardValidator;
