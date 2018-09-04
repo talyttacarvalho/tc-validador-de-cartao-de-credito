@@ -1,6 +1,6 @@
 # Validador de Cartão de de Crédito
 
-**Essa biblioteca tem a finalidade de realizar a validação de cartões (crédito ou débito) com o uso do Algoritmo de Luhn, em aplicações web.** Esta versão validade cartões com no máximo 16 (dezesseis) dígitos.
+**Essa biblioteca tem a finalidade de realizar a validação de cartões (crédito ou débito) com o uso do Algoritmo de Luhn, em aplicações web.**
 
 ## Os métodos utilizados na biblioteca são:
 
@@ -17,7 +17,7 @@ validator.cardValidator(36490102462661);
 
 ## Versão 1.0.0
 
-* funcionalidades: validação de cartão (crédito ou débito) que contenha até 16 (dezesseis) dígitos;
+* funcionalidades: validação de cartão (crédito ou débito);
 * no caso de o cartão ser válido, retorna true, sendo inválido, retorna false.
 
 ## Instalação
@@ -46,5 +46,5 @@ $npm install tc-validador-de-cartao-de-credito
 
 ### versão 1.0.0 (released)
 
-* funcionalidades: validação de cartão (crédito ou débito) que contenha até 16 (dezesseis) dígitos;
+* funcionalidades: validação de cartão (crédito ou débito);
 * no caso de o cartão ser válido retorna true, sendo inválido, retorna false.
