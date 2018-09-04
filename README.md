@@ -8,10 +8,10 @@
 
 Exemplo de uso:
 
-  $node
-  let validator = require("tc-validador-de-cartao-de-credito")
-  validator.cardValidator(36490102462661);
-  //"true"
+  > $node
+  > let validator = require("tc-validador-de-cartao-de-credito")
+  > validator.cardValidator(36490102462661);
+  > //"true"
 
 ## Versão 1.0.0
 
@@ -24,7 +24,7 @@ Exemplo de uso:
 
 * proceda a instação utilizando
 
-  $npm install tc-validador-de-cartao-de-credito
+  > $npm install tc-validador-de-cartao-de-credito
 
 ## Roadmap oficial do projeto
 
@@ -32,7 +32,7 @@ Exemplo de uso:
 
 * implementação de reconhecimento e apresentação da bandeira do cartão inserido.
 
-#### versão 1.2.0 (previsão dezembro/2018)
+### versão 1.2.0 (previsão dezembro/2018)
 
 * implementação de inserção automática de "." e "-" entre os números.
 
