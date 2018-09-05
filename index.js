@@ -13,7 +13,7 @@ function isValid(numCard) {
   if (!numCard) {
     throw new Error("Número do cartão não inserido.");
   }
-  for (num of numCard) {
+  for (let num of numCard) {
     if (num.charCodeAt() < 48 || num.charCodeAt() > 57) {
       throw new Error("Cartão com dígitos inválidos (letras).");
     }
@@ -22,8 +22,7 @@ function isValid(numCard) {
 }
 
 function beNumber(numCard) {
-
-  let numString = numCard.split('');
+  let numString = numCard.split("");
   numString.reverse();
 
   let conjNum = [];
@@ -42,7 +41,7 @@ function applyAlgorithm(numCard) {
     }
   }
 
-  let sum = 0
+  let sum = 0;
   for (let i = 0; i < numCard.length; i++) {
     sum = sum + numCard[i];
   }
