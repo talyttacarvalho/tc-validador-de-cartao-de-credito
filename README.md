@@ -1,6 +1,6 @@
 # Validador de Cartão de de Crédito
 
-**Esta biblioteca tem a finalidade de realizar a validação de cartões (crédito ou débito) com o uso do Algoritmo de Luhn, em aplicações web.**
+**Esta biblioteca tem a finalidade de realizar a validação de cartões (crédito ou débito) com o uso do Algoritmo de Luhn, em aplicações web.** Ao realizar a validação, deverá retornar true ou false de acordo com o caso.
 
 ## Os métodos utilizados na biblioteca são:
 
@@ -42,7 +42,7 @@ $npm install tc-validador-de-cartao-de-credito
 
 ### versão 1.0.1 (previsão novembro/2018)
 
-* Implementação de correção automática quando for inserido espaçamento pelo usuário.
+* Implementação de correção automática quando for inserido espaçamento pelo usuário;
 * correção de eventuais ocorrência de bugs.
 
 ### versão 1.0.0 (released)

@@ -1,11 +1,7 @@
 function cardValidator(numCard) {
-  try {
-    if (isValid(numCard)) {
-      numCard = beNumber(numCard);
-      return applyAlgorithm(numCard);
-    }
-  } catch (error) {
-    return error.message;
+  if (isValid(numCard)) {
+    numCard = beNumber(numCard);
+    return applyAlgorithm(numCard);
   }
 }
 

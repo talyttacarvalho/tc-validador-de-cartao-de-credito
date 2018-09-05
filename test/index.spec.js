@@ -1,24 +1,39 @@
-const assert = require('assert');
-const cardValidator = require('../index.js');
+const assert = require("assert");
+const chai = require("chai");
+const expect = chai.expect;
 
-describe('cardValidator()', function() {
-  it('validar cartão com dígitos corretos, deve retornar true', () => {
-    assert.equal(cardValidator('36490102462661'), true);
+const cardValidator = require("../index.js");
+
+describe("cardValidator()", function () {
+  describe("Validar cartão com dígitos corretos.", function () {
+    it("Deve retornar true", () => {
+      assert.equal(cardValidator("36490102462661"), true);
+    });
   });
 
-  it('validar cartão com dígito incorreto, deve retornar false', () => {
-    assert.equal(cardValidator('36490102462669'), false);
+  describe("Validar cartão com dígito incorreto.", function () {
+    it("Deve retornar false", () => {
+      assert.equal(cardValidator("36490102462669"), false);
+    });
   });
 
-  it('validar campo em branco, deve retornar erro "Número do cartão não inserido."', () => {
-    assert.equal(cardValidator(''), 'Número do cartão não inserido.');
+  describe("Validar número incompleto.", function () {
+    it("Deve retornar false.", () => {
+      assert.equal(cardValidator("3649010"), false);
+    });
   });
 
-  it('validar número incompleto, deve retornar false.', () => {
-    assert.equal(cardValidator('3649010'), false);
+  describe("Quando não hover parâmetro.", function () {
+    it('Deve retornar erro "Número do cartão não inserido."', () => {
+      let emptyPar = () => {cardValidator("")};
+      expect(emptyPar).to.throw("Número do cartão não inserido.");
+    });
   });
 
-  it('validar letras inseridas no campo, deve retornar Cartão com dígitos inválidos (letras).', () => {
-    assert.equal(cardValidator('36A9O1OZA6Z669'), 'Cartão com dígitos inválidos (letras).');
+  describe("Validar letras inseridas no campo.", function () {
+    it('Deve retornar "Cartão com dígitos inválidos (letras)."', () => {
+      let errorPar = () => {cardValidator("36A9O1OZA6Z669")};
+      expect(errorPar).to.throw("Cartão com dígitos inválidos (letras).");
+    });
   });
 });
