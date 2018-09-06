@@ -47,4 +47,4 @@ function applyAlgorithm(arrayNumCard) {
   }
 }
 
-module.exports = cardValidator;
+module.exports.cardValidator = cardValidator;
