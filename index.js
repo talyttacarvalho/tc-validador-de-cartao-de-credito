@@ -16,6 +16,9 @@ function isValid(numCard) {
       throw new Error("Cartão com dígitos inválidos.");
     }
   }
+  if (numCard.toString().length === 1 || numCard.toString().length > 16) {
+    throw new Error("Digite corretamente os dígitos do cartão.");
+  }
 }
 
 function beNumber(numCard) {

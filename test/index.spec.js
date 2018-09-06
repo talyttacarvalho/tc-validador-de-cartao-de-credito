@@ -43,4 +43,11 @@ describe("cardValidator()", function () {
       expect(errorPar).to.throw("Cartão com dígitos inválidos.");
     });
   });
+
+  describe("Validar caracteres inseridos no campo.", function () {
+    it('Deve retornar "Cartão com dígitos inválidos."', () => {
+      let wrongPar = () => {lib.cardValidator(1)};
+      expect(wrongPar).to.throw("Digite corretamente os dígitos do cartão.");
+    });
+  });
 });

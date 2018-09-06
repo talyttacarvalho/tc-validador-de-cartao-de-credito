@@ -32,20 +32,25 @@ $npm install tc-card-validator
 
 ## Roadmap oficial do projeto
 
-### versão 2.2.1 (sem previsão)
+### versão 2.2.2 (sem previsão)
 
 * Implementação de reconhecimento e apresentação da bandeira do cartão inserido.
 
-### versão 1.2.1 (previsão dezembro/2018)
+### versão 1.2.2 (previsão dezembro/2018)
 
 * Implementação de inserção automática de "." e "-" entre os números.
 
-### versão 1.1.1 (previsão novembro/2018)
+### versão 1.1.2 (previsão novembro/2018)
 
 * Implementação de correção automática quando for inserido espaçamento pelo usuário;
 * correção de eventuais ocorrência de bugs.
 
 ### versão 1.0.2 (released)
+
+* Atualização do Readme
+* Correção de BUG.
+
+### versão 1.0.1 (released)
 
 * Atualização do Readme
 * Correção de BUG.
