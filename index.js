@@ -1,8 +1,7 @@
 function cardValidator(numCard) {
-  if (isValid(numCard)) {
-    numCard = beNumber(numCard);
-    return applyAlgorithm(numCard);
-  }
+  isValid(numCard);
+  let arrayNumCard = beNumber(numCard);
+  return applyAlgorithm(arrayNumCard);
 }
 
 function isValid(numCard) {
@@ -14,7 +13,6 @@ function isValid(numCard) {
       throw new Error("Cartão com dígitos inválidos (letras).");
     }
   }
-  return true;
 }
 
 function beNumber(numCard) {
@@ -28,18 +26,18 @@ function beNumber(numCard) {
   return conjNum;
 }
 
-function applyAlgorithm(numCard) {
-  for (let i = 1; i < numCard.length; i = i + 2) {
-    if ((numCard[i] * 2) > 9) {
-      numCard[i] = (parseInt((numCard[i] * 2) / 10)) + ((numCard[i] * 2) % 10);
+function applyAlgorithm(arrayNumCard) {
+  for (let i = 1; i < arrayNumCard.length; i = i + 2) {
+    if ((arrayNumCard[i] * 2) > 9) {
+      arrayNumCard[i] = (parseInt((arrayNumCard[i] * 2) / 10)) + ((arrayNumCard[i] * 2) % 10);
     } else {
-      numCard[i] = numCard[i] * 2;
+      arrayNumCard[i] = arrayNumCard[i] * 2;
     }
   }
 
   let sum = 0;
-  for (let i = 0; i < numCard.length; i++) {
-    sum = sum + numCard[i];
+  for (let i = 0; i < arrayNumCard.length; i++) {
+    sum = sum + arrayNumCard[i];
   }
 
   if (sum % 10 === 0) {
