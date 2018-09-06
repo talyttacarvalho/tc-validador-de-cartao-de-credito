@@ -15,7 +15,7 @@ validator.cardValidator(36490102462661)
 //"true"
 ```
 
-## Versão 1.0.2
+## Versão 1.0.3
 
 * Funcionalidades: validação de cartão (crédito ou débito);
 * No caso de o cartão ser válido retorna true, sendo inválido, retorna false.
@@ -32,18 +32,23 @@ $npm install tc-card-validator
 
 ## Roadmap oficial do projeto
 
-### versão 2.2.2 (sem previsão)
+### versão 2.2.3 (sem previsão)
 
 * Implementação de reconhecimento e apresentação da bandeira do cartão inserido.
 
-### versão 1.2.2 (previsão dezembro/2018)
+### versão 1.2.3 (previsão dezembro/2018)
 
 * Implementação de inserção automática de "." e "-" entre os números.
 
-### versão 1.1.2 (previsão novembro/2018)
+### versão 1.1.3 (previsão novembro/2018)
 
 * Implementação de correção automática quando for inserido espaçamento pelo usuário;
 * correção de eventuais ocorrência de bugs.
+
+### versão 1.0.3 (released)
+
+* Atualização do Readme
+* Correção de BUG.
 
 ### versão 1.0.2 (released)
 
