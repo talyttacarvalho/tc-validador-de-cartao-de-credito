@@ -8,15 +8,18 @@ function isValid(numCard) {
   if (!numCard) {
     throw new Error("Número do cartão não inserido.");
   }
-  for (let num of numCard) {
+  if (typeof numCard === "string"){
+    throw new Error("Número do cartão não pode ser string.");
+  }
+  for (let num of numCard.toString()) {
     if (num.charCodeAt() < 48 || num.charCodeAt() > 57) {
-      throw new Error("Cartão com dígitos inválidos (letras).");
+      throw new Error("Cartão com dígitos inválidos.");
     }
   }
 }
 
 function beNumber(numCard) {
-  let numString = numCard.split("");
+  let numString = numCard.toString().split("");
   numString.reverse();
 
   let conjNum = [];
